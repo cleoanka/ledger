@@ -1,22 +1,22 @@
 {
   "id": "zeno-001",
   "status": "manual",
-  "last_verified": null,
+  "last_verified": "2026-11-25",
   "last_run": {
     "id": "zeno-001",
     "date": "2026-11-25",
     "target": "pinned",
     "commit": "493eed8b2bdc8d31b743bb4deaf5804ba037c45d",
     "runner": "local:apple-m4-pro",
-    "duration_s": 1.9,
-    "exit_code": 101,
-    "value": null,
+    "duration_s": 14.9,
+    "exit_code": 0,
+    "value": 0.94565,
     "guards": [],
-    "passed": false,
-    "error": "setup failed with exit code 101",
-    "path": "runs/zeno-001/2026-11-25.json"
+    "passed": true,
+    "error": null,
+    "path": "runs/zeno-001/2026-11-25-2.json"
   },
   "head_last_run": null,
-  "ledger_commit": "0ebc2346cf2039042c5eee84ca80e13e537fed33",
-  "updated": "2026-11-25T23:47:22Z"
+  "ledger_commit": "5d502de078db00280e8de78ad6f6214ca15c44ef",
+  "updated": "2026-11-25T23:48:56Z"
 }
