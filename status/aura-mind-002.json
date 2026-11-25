@@ -22,7 +22,26 @@
     "error": null,
     "path": "runs/aura-mind-002/2026-11-25.json"
   },
-  "head_last_run": null,
-  "ledger_commit": "0ebc2346cf2039042c5eee84ca80e13e537fed33",
-  "updated": "2026-11-25T23:47:22Z"
+  "head_last_run": {
+    "id": "aura-mind-002",
+    "date": "2026-11-25",
+    "target": "head",
+    "commit": "43d1204e9c5e3cc227e86c74d138d6aab7e97be3",
+    "runner": "local:apple-m4-pro",
+    "duration_s": 85.1,
+    "exit_code": 0,
+    "value": 0.0,
+    "guards": [
+      {
+        "key": "control_global_loop.leak_steps",
+        "value": 280.0,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "error": null,
+    "path": "runs/aura-mind-002/2026-11-25-head.json"
+  },
+  "ledger_commit": "19271730ea45c2bebb97b82e0b09595a39869fd4",
+  "updated": "2026-11-25T23:55:52Z"
 }

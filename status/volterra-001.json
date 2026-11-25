@@ -22,7 +22,26 @@
     "error": null,
     "path": "runs/volterra-001/2026-11-25.json"
   },
-  "head_last_run": null,
-  "ledger_commit": "0ebc2346cf2039042c5eee84ca80e13e537fed33",
-  "updated": "2026-11-25T23:47:22Z"
+  "head_last_run": {
+    "id": "volterra-001",
+    "date": "2026-11-25",
+    "target": "head",
+    "commit": "de827f3b59fd705f5507f8a3fde8d960316693ff",
+    "runner": "local:apple-m4-pro",
+    "duration_s": 12.4,
+    "exit_code": 0,
+    "value": 6.661338147750939e-16,
+    "guards": [
+      {
+        "key": "trapezoid_max_err",
+        "value": 0.00326665857533448,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "error": null,
+    "path": "runs/volterra-001/2026-11-25-head.json"
+  },
+  "ledger_commit": "19271730ea45c2bebb97b82e0b09595a39869fd4",
+  "updated": "2026-11-25T23:55:52Z"
 }

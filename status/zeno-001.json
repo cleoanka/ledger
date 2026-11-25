@@ -16,7 +16,20 @@
     "error": null,
     "path": "runs/zeno-001/2026-11-25-2.json"
   },
-  "head_last_run": null,
-  "ledger_commit": "5d502de078db00280e8de78ad6f6214ca15c44ef",
-  "updated": "2026-11-25T23:48:56Z"
+  "head_last_run": {
+    "id": "zeno-001",
+    "date": "2026-11-25",
+    "target": "head",
+    "commit": "72540d972314b88198fc70b4ef8e36b19a3d8953",
+    "runner": "local:apple-m4-pro",
+    "duration_s": 16.6,
+    "exit_code": 0,
+    "value": 0.94565,
+    "guards": [],
+    "passed": true,
+    "error": null,
+    "path": "runs/zeno-001/2026-11-25-head.json"
+  },
+  "ledger_commit": "19271730ea45c2bebb97b82e0b09595a39869fd4",
+  "updated": "2026-11-25T23:55:52Z"
 }

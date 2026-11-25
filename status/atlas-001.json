@@ -16,7 +16,20 @@
     "error": null,
     "path": "runs/atlas-001/2026-11-25.json"
   },
-  "head_last_run": null,
-  "ledger_commit": "0ebc2346cf2039042c5eee84ca80e13e537fed33",
-  "updated": "2026-11-25T23:47:22Z"
+  "head_last_run": {
+    "id": "atlas-001",
+    "date": "2026-11-25",
+    "target": "head",
+    "commit": "004a618248260f65a57488db0d3dfd8109e4e8ee",
+    "runner": "local:apple-m4-pro",
+    "duration_s": 294.2,
+    "exit_code": 0,
+    "value": 0.9468616666666667,
+    "guards": [],
+    "passed": true,
+    "error": null,
+    "path": "runs/atlas-001/2026-11-25-head.json"
+  },
+  "ledger_commit": "19271730ea45c2bebb97b82e0b09595a39869fd4",
+  "updated": "2026-11-25T23:55:52Z"
 }

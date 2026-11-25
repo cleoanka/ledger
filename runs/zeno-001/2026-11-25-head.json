@@ -1,0 +1,15 @@
+{
+  "id": "zeno-001",
+  "date": "2026-11-25",
+  "target": "head",
+  "commit": "72540d972314b88198fc70b4ef8e36b19a3d8953",
+  "runner": "local:apple-m4-pro",
+  "command": "./target/release/zeno run examples/grover.qasm --shots 100000 --seed 11 --json > result.json",
+  "duration_s": 16.6,
+  "exit_code": 0,
+  "value": 0.94565,
+  "guards": [],
+  "passed": true,
+  "error": null,
+  "stdout_tail": "   Compiling proc-macro2 v1.0.106\n   Compiling quote v1.0.46\n   Compiling unicode-ident v1.0.24\n   Compiling libc v0.2.186\n   Compiling crossbeam-utils v0.8.22\n   Compiling crossbeam-epoch v0.9.20\n   Compiling zerocopy v0.8.54\n   Compiling serde_core v1.0.228\n   Compiling cfg-if v1.0.4\n   Compiling utf8parse v0.2.2\n   Compiling crossbeam-deque v0.8.7\n   Compiling autocfg v1.5.1\n   Compiling anstyle v1.0.14\n   Compiling anstyle-parse v1.0.0\n   Compiling rayon-core v1.13.0\n   Compiling serde v1.0.228\n   Compiling is_terminal_polyfill v1.70.2\n   Compiling num-traits v0.2.19\n   Compiling colorchoice v1.0.5\n   Compiling zmij v1.0.21\n   Compiling anstyle-query v1.1.5\n   Compiling anstream v1.0.0\n   Compiling heck v0.5.0\n   Compiling thiserror v2.0.18\n   Compiling strsim v0.11.1\n   Compiling serde_json v1.0.150\n   Compiling clap_lex v1.1.0\n   Compiling memchr v2.8.3\n   Compiling either v1.16.0\n   Compiling clap_builder v4.6.0\n   Compiling itoa v1.0.18\n   Compiling getrandom v0.2.17\n   Compiling syn v2.0.118\n   Compiling rand_core v0.6.4\n   Compiling rand_xoshiro v0.6.0\n   Compiling rayon v1.12.0\n   Compiling serde_derive v1.0.228\n   Compiling thiserror-impl v2.0.18\n   Compiling clap_derive v4.6.1\n   Compiling ppv-lite86 v0.2.21\n   Compiling rand_chacha v0.3.1\n   Compiling clap v4.6.1\n   Compiling rand v0.8.7\n   Compiling num-complex v0.4.6\n   Compiling zeno v0.2.0 ($WORK/zeno-72540d9-head-c43ef2ab/src)\n    Finished `release` profile [optimized] target(s) in 14.89s\n"
+}
