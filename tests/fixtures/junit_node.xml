@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testsuite name="rs" tests="2" failures="1" skipped="0" hostname="h">
+		<testcase name="heals" time="0.1" classname="test"/>
+		<testcase name="boundary" time="0.1" classname="test"><failure type="testCodeFailure" message="x">x</failure></testcase>
+	</testsuite>
+	<testcase name="top-level" time="0.1" classname="test"><failure type="testCodeFailure" message="y">y</failure></testcase>
+	<!-- tests 3 -->
+	<!-- fail 2 -->
+</testsuites>

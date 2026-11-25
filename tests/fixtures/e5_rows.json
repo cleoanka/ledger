@@ -1,0 +1,6 @@
+[
+ {"case": "a", "track": 3, "err": 2e-15},
+ {"case": "b", "track": 0, "err": 1e-6},
+ {"case": "b", "track": 3, "err": 4e-15},
+ {"case": "b", "track": 3, "err": 1e-15}
+]

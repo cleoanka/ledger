@@ -1,0 +1,11 @@
+# Default rules, plus one narrow allowlist: result_key regexes in claims/ are high-entropy text,
+# not secrets (generic-api-key matches the word "key"). Both conditions must hold.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "claim result_key regexes"
+condition = "AND"
+paths = ['''^claims/[a-z0-9-]+\.json$''']
+regexTarget = "line"
+regexes = ['''^\s*"result_key": ''']

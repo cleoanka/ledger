@@ -1,0 +1,4 @@
+{"schema_version": 1, "depth": 12, "results": [
+ {"qubits": 24, "skipped": false, "sim_time_ms": 253.0},
+ {"qubits": 26, "skipped": false, "sim_time_ms": 951.0}
+]}

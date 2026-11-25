@@ -1,0 +1,54 @@
+{
+  "id": "zeno-002",
+  "project": "zeno",
+  "lab_page": "/lab/zeno/",
+  "sentence": {
+    "tr": "Apple M4 Pro'da 26 kübitlik, 12 derinlikli rastgele bir devre Metal arka ucunda 0,95 s'de çalışıyor; aynı devre CPU'da f64 ile 3,86 s sürüyor.",
+    "en": "On an Apple M4 Pro, a random 26-qubit, depth-12 circuit runs in 0.95 s on the Metal backend; the same circuit takes 3.86 s on the CPU in f64."
+  },
+  "value": 0.95,
+  "display": {
+    "tr": "0,95 s",
+    "en": "0.95 s"
+  },
+  "unit": {
+    "tr": "saniye (simülasyon süresi)",
+    "en": "seconds (simulation time)"
+  },
+  "comparator": "approx",
+  "tolerance": 0.15,
+  "conditions": {
+    "tr": "yalnız Apple M4 Pro; CI'da GPU yok, elle doğrulanır.",
+    "en": "Apple M4 Pro only; CI has no GPU, verified by hand."
+  },
+  "repo": "github.com/cleoanka/zeno",
+  "commit": "493eed8b2bdc8d31b743bb4deaf5804ba037c45d",
+  "setup": "cargo build --release --features metal",
+  "command": "./target/release/zeno bench --qubits 26 --depth 12 --precision f32 --backend metal --json > result.json",
+  "result_path": "result.json",
+  "result_key": "results[qubits=26].sim_time_ms*0.001",
+  "adapter": "json_select",
+  "rerun": {
+    "class": "manual",
+    "budget_min": 10,
+    "runs_on": "local:apple-m4-pro"
+  },
+  "status": "manual",
+  "history": [
+    {
+      "date": "2026-11-26",
+      "status": "manual",
+      "reason": {
+        "tr": "İlk kayıt: değer sabitlenmiş commit'teki README'den; defter henüz yeniden çalıştırmadı.",
+        "en": "First entry: value from the README at the pinned commit; not re-run by the ledger yet."
+      },
+      "by": "cleoanka"
+    }
+  ],
+  "head_check": false,
+  "refutations": [],
+  "sources": [
+    "zeno@493eed8:README.md#benchmarks",
+    "zeno@493eed8:docs/PERFORMANCE.md"
+  ]
+}
