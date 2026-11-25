@@ -1,0 +1,22 @@
+{
+  "id": "unscratchable-001",
+  "status": "manual",
+  "last_verified": "2026-11-25",
+  "last_run": {
+    "id": "unscratchable-001",
+    "date": "2026-11-25",
+    "target": "pinned",
+    "commit": "831f6fa2383a42903e0714947536533acb5b9718",
+    "runner": "local:apple-m4-pro",
+    "duration_s": 2.1,
+    "exit_code": 0,
+    "value": 0.0,
+    "guards": [],
+    "passed": true,
+    "error": null,
+    "path": "runs/unscratchable-001/2026-11-25.json"
+  },
+  "head_last_run": null,
+  "ledger_commit": "0ebc2346cf2039042c5eee84ca80e13e537fed33",
+  "updated": "2026-11-25T23:47:22Z"
+}

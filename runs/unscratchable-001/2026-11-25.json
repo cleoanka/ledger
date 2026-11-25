@@ -1,0 +1,15 @@
+{
+  "id": "unscratchable-001",
+  "date": "2026-11-25",
+  "target": "pinned",
+  "commit": "831f6fa2383a42903e0714947536533acb5b9718",
+  "runner": "local:apple-m4-pro",
+  "command": "node --test --test-reporter=junit --test-reporter-destination=result.xml",
+  "duration_s": 2.1,
+  "exit_code": 0,
+  "value": 0.0,
+  "guards": [],
+  "passed": true,
+  "error": null,
+  "stdout_tail": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "volterra-001",
+  "date": "2026-11-25",
+  "target": "pinned",
+  "commit": "26180ffcc1a45a673840182cca652d5fc0ee8e66",
+  "runner": "local:apple-m4-pro",
+  "command": "python -I $LEDGER/adapters/volterra_quadrature.py --repo . --out result.json",
+  "duration_s": 36.9,
+  "exit_code": 0,
+  "value": 6.661338147750939e-16,
+  "guards": [
+    {
+      "key": "trapezoid_max_err",
+      "value": 0.00326665857533448,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "error": null,
+  "stdout_tail": "Collecting numpy\n  Downloading numpy-2.5.5-cp313-cp313-macosx_14_0_arm64.whl.metadata (6.6 kB)\nDownloading numpy-2.5.5-cp313-cp313-macosx_14_0_arm64.whl (5.5 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 295.4 kB/s  0:00:18\nInstalling collected packages: numpy\nSuccessfully installed numpy-2.5.5\n{\"chebyshev_max_err\": 6.661338147750939e-16, \"trapezoid_max_err\": 0.00326665857533448, \"M\": 40}\n"
+}

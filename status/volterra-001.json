@@ -1,0 +1,28 @@
+{
+  "id": "volterra-001",
+  "status": "manual",
+  "last_verified": "2026-11-25",
+  "last_run": {
+    "id": "volterra-001",
+    "date": "2026-11-25",
+    "target": "pinned",
+    "commit": "26180ffcc1a45a673840182cca652d5fc0ee8e66",
+    "runner": "local:apple-m4-pro",
+    "duration_s": 36.9,
+    "exit_code": 0,
+    "value": 6.661338147750939e-16,
+    "guards": [
+      {
+        "key": "trapezoid_max_err",
+        "value": 0.00326665857533448,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "error": null,
+    "path": "runs/volterra-001/2026-11-25.json"
+  },
+  "head_last_run": null,
+  "ledger_commit": "0ebc2346cf2039042c5eee84ca80e13e537fed33",
+  "updated": "2026-11-25T23:47:22Z"
+}

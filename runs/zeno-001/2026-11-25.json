@@ -1,0 +1,15 @@
+{
+  "id": "zeno-001",
+  "date": "2026-11-25",
+  "target": "pinned",
+  "commit": "493eed8b2bdc8d31b743bb4deaf5804ba037c45d",
+  "runner": "local:apple-m4-pro",
+  "command": "./target/release/zeno run examples/grover.qasm --shots 100000 --seed 11 --json > result.json",
+  "duration_s": 1.9,
+  "exit_code": 101,
+  "value": null,
+  "guards": [],
+  "passed": false,
+  "error": "setup failed with exit code 101",
+  "stdout_tail": "ow all linker arguments\n  = note: open terminal failed: not a terminal\n          \n\nerror: linking with `cc` failed: exit status: 1\n  |\n  = note:  \"cc\" \"$TMPDIR/rustcGw4Ruj/symbols.o\" \"<5 object files omitted>\" \"<sysroot>/lib/rustlib/aarch64-apple-darwin/lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,libcfg_if-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,liblibc-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib\" \"-lSystem\" \"-lc\" \"-lm\" \"-arch\" \"arm64\" \"-mmacosx-version-min=11.0.0\" \"-o\" \"$WORK/zeno-493eed8-pinned-de5baac2/src/target/release/build/libc-0674e23e241df852/build_script_build-0674e23e241df852\" \"-Wl,-dead_strip\" \"-nodefaultlibs\"\n  = note: some arguments are omitted. use `--verbose` to show all linker arguments\n  = note: open terminal failed: not a terminal\n          \n\nerror: could not compile `zerocopy` (build script) due to 1 previous error\nerror: could not compile `libc` (build script) due to 1 previous error\nerror: linking with `cc` failed: exit status: 1\n  |\n  = note:  \"cc\" \"$TMPDIR/rustcBSuEbl/symbols.o\" \"<2 object files omitted>\" \"<sysroot>/lib/rustlib/aarch64-apple-darwin/lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,libcfg_if-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,liblibc-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib\" \"-lSystem\" \"-lc\" \"-lm\" \"-arch\" \"arm64\" \"-mmacosx-version-min=11.0.0\" \"-o\" \"$WORK/zeno-493eed8-pinned-de5baac2/src/target/release/build/zmij-03248f590a2319d3/build_script_build-03248f590a2319d3\" \"-Wl,-dead_strip\" \"-nodefaultlibs\"\n  = note: some arguments are omitted. use `--verbose` to show all linker arguments\n  = note: open terminal failed: not a terminal\n          \n\nerror: could not compile `zmij` (build script) due to 1 previous error\n"
+}
