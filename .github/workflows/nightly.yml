@@ -1,0 +1,98 @@
+# Re-runs claims at their pinned commits and records the result. Nightly class every night at 03:00
+# UTC (plus a HEAD run for head_check claims), weekly class on Sundays at 04:00 UTC. Each runner job
+# only runs claims whose rerun.runs_on matches it; the record job commits what changed.
+# Budget (platform spec 8.4): at most 10 minutes per claim, 45 minutes per night.
+name: rerun
+
+on:
+  schedule:
+    - cron: '0 3 * * *'    # nightly
+    - cron: '0 4 * * 0'    # weekly (Sunday)
+  workflow_dispatch:
+    inputs:
+      class:
+        description: Claim class to re-run
+        type: choice
+        options: [nightly, weekly]
+        default: nightly
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-14]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    env:
+      INPUT_CLASS: ${{ github.event.inputs.class }}
+      SCHEDULE: ${{ github.event.schedule }}
+      LEDGER_RUNS_ON: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0   # v7.1.0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with:
+          node-version: '22'
+
+      - name: Pick the class
+        run: |
+          c="$INPUT_CLASS"
+          if [ -z "$c" ]; then
+            if [ "$SCHEDULE" = '0 4 * * 0' ]; then c=weekly; else c=nightly; fi
+          fi
+          echo "LEDGER_CLASS=$c" >> "$GITHUB_ENV"
+
+      - name: Re-run at the pinned commits
+        run: |
+          rc=0
+          head=""
+          if [ "$LEDGER_CLASS" = nightly ]; then head="--head"; fi
+          python3 runner/ledger_run.py --class "$LEDGER_CLASS" --runs-on "$LEDGER_RUNS_ON" \
+            --workdir "$RUNNER_TEMP/ledger-work" $head || rc=$?
+          if [ "$rc" -ge 2 ]; then exit "$rc"; fi
+          if [ "$rc" -eq 1 ]; then echo "::warning::at least one claim is outside its rule; see runs/"; fi
+
+      - name: Pack what changed
+        run: |
+          git ls-files -m -o --exclude-standard -- runs status claims > "$RUNNER_TEMP/changed.txt"
+          cat "$RUNNER_TEMP/changed.txt"
+          tar -czf "$RUNNER_TEMP/changes.tgz" -T "$RUNNER_TEMP/changed.txt"
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9   # v7.0.2
+        with:
+          name: changes-${{ matrix.os }}
+          path: ${{ runner.temp }}/changes.tgz
+          retention-days: 7
+
+  record:
+    needs: run
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    concurrency:
+      group: ledger-commit
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333   # v8.0.2
+        with:
+          path: ${{ runner.temp }}/changes
+      - name: Commit the records
+        run: |
+          shopt -s nullglob
+          for f in "$RUNNER_TEMP"/changes/*/changes.tgz; do tar -xzf "$f"; done
+          python3 -m unittest tests.test_claims
+          git add runs status claims
+          if git diff --cached --quiet; then echo "nothing to record"; exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898583+github-actions[bot]@users.noreply.github.com'
+          git commit -q -m "Record $(date -u +%Y-%m-%d) runs"
+          git push origin HEAD:main

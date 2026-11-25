@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security issue on www.cleoanka.com
+    url: https://www.cleoanka.com/.well-known/security.txt
+    about: Site vulnerabilities are outside the refutation program. Report them privately as security.txt says.
+  - name: Refutation rules / Çürütme kuralları
+    url: https://github.com/cleoanka/ledger/blob/main/CONTRIBUTING.md
+    about: What counts as a refutation, response times and the bounty.

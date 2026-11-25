@@ -1,0 +1,68 @@
+name: Refutation / Çürütme
+description: Show that a ledger claim is false under its own conditions. / Bir iddianın kendi koşullarında yanlış olduğunu gösterin.
+title: "[refutation] <claim id>: "
+labels: ["refutation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read [CONTRIBUTING.md](https://github.com/cleoanka/ledger/blob/main/CONTRIBUTING.md) first. A valid refutation is a reproducible run against the **pinned commit**, under the **claim's own conditions**, that lands outside the tolerance; or a method error that voids the claim (for example future leakage or test data in training).
+
+        Önce [CONTRIBUTING.md](https://github.com/cleoanka/ledger/blob/main/CONTRIBUTING.md) dosyasını okuyun. Geçerli bir çürütme, **sabitlenmiş commit'e** karşı, **iddianın kendi koşullarında**, sayıyı toleransın dışına çıkaran yeniden üretilebilir bir çalıştırmadır; ya da iddiayı geçersiz kılan bir yöntem hatasıdır (örneğin gelecek sızıntısı ya da test verisinin eğitime karışması).
+  - type: input
+    id: claim
+    attributes:
+      label: Claim id / İddia kimliği
+      placeholder: atlas-001
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind / Tür
+      options:
+        - Re-run outside the tolerance / Toleransın dışında kalan yeniden çalıştırma
+        - Method error / Yöntem hatası
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Exact commands / Tam komutlar
+      description: From a clean checkout of the pinned commit. / Sabitlenmiş commit'in temiz bir kopyasından.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / Ortam
+      description: OS, CPU or GPU, Python/Node/Rust versions, and why they match the claim's conditions. / İşletim sistemi, işlemci ya da GPU, sürümler ve bunların iddianın koşullarına neden uyduğu.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Measured value and output / Ölçülen değer ve çıktı
+      description: The number you got and the relevant output (trim long logs). / Bulduğunuz sayı ve ilgili çıktı (uzun kayıtları kısaltın).
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Why this refutes the claim / Bu neden iddiayı çürütüyor
+    validations:
+      required: true
+  - type: input
+    id: payout
+    attributes:
+      label: Bounty preference (optional) / Ödül tercihi (isteğe bağlı)
+      description: Your GitHub Sponsors profile, or an open-source project to donate to. / GitHub Sponsors profiliniz ya da bağış yapılacak açık kaynak proje.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm / Onay
+      options:
+        - label: I ran this against the pinned commit under the claim's stated conditions. / Bunu sabitlenmiş commit'e karşı, iddianın belirtilen koşullarında çalıştırdım.
+          required: true

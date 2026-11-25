@@ -1,0 +1,26 @@
+# Unit tests and claim validation on every push and pull request. Never re-runs claims.
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0   # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Unit tests (schema, claims, adapters, runner)
+        run: python3 -m unittest discover -s tests -v
+      - name: Dry run of every class
+        run: |
+          for c in nightly weekly manual; do python3 runner/ledger_run.py --class "$c" --head --dry-run; done
+      - name: Shell scripts
+        run: shellcheck -S warning scripts/*.sh
