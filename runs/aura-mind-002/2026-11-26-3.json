@@ -1,0 +1,21 @@
+{
+  "id": "aura-mind-002",
+  "date": "2026-11-26",
+  "target": "pinned",
+  "commit": "2ab893dfc22ea395b76e88092ab895f1f753848a",
+  "runner": "github-actions:ubuntu-24.04",
+  "command": "python scripts/certify_locality.py",
+  "duration_s": 31.6,
+  "exit_code": 0,
+  "value": 0.0,
+  "guards": [
+    {
+      "key": "control_global_loop.leak_steps",
+      "value": 280.0,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "error": null,
+  "stdout_tail": "0.1.2-py3-none-any.whl (10.0 kB)\nBuilding wheels for collected packages: aura-mind\n  Building editable for aura-mind (pyproject.toml): started\n  Building editable for aura-mind (pyproject.toml): finished with status 'done'\n  Created wheel for aura-mind: filename=aura_mind-0.3.0-0.editable-py3-none-any.whl size=33118 sha256=d1f321b75cf0119787dadf87340c0c81ae0f9f068653ebe0836f1eff6b2351ab\n  Stored in directory: /tmp/pip-ephem-wheel-cache-7t4fh85e/wheels/ca/61/8e/17bfd094442497044fb565e5efc6e7ef2f1e5371d8abd20b88\nSuccessfully built aura-mind\nInstalling collected packages: typing-extensions, threadpoolctl, shellingham, pyyaml, pygments, numpy, narwhals, mdurl, cloudpickle, annotated-types, annotated-doc, typing-inspection, scipy, pydantic-core, markdown-it-py, joblib, scikit-learn, rich, pydantic, typer, aura-mind\nSuccessfully installed annotated-doc-0.0.7 annotated-types-0.8.0 aura-mind-0.3.0 cloudpickle-3.1.3 joblib-1.6.0 markdown-it-py-4.3.0 mdurl-0.1.2 narwhals-2.29.0 numpy-2.5.5 pydantic-2.14.4 pydantic-core-2.50.5 pygments-2.21.0 pyyaml-6.0.4 rich-15.0.0 scikit-learn-1.9.1 scipy-1.18.1 shellingham-1.5.4 threadpoolctl-3.8.0 typer-0.29.3 typing-extensions-4.16.0 typing-inspection-0.4.5\n====================================================================\nYERELLİK SERTİFİKASI — Anayasa M4 (bölgesellik=yerellik) bit-düzeyi kanıt\n====================================================================\nakış: 420 örnek, 3 permuted görev, preset=accurate, seed=7\n\n★ AURA-MIND (bölgesel)     bölge=3\n    temiz sertifika        420/420  (öğrenme 418/418)\n    sızıntı adımı          0\n    hash-zinciri geçerli   True   baş=74a020ea096a60ed…\n\n◼ POZİTİF KONTROL (global) bölge=3   (M4 YASAK)\n    sızıntı adımı          280/420   toplam sızıntı=420  tier={'memory': 417, 'structural': 3}\n\naura-mind: 420/420 temiz sertifika, 0 sızıntı (3 bölge). Kontrol: 280/420 adımda yakalandı.\nVERDICT: SERTİFİKA GEÇERLİ ✓\nyazıldı: docs/figures/locality_certificate.json · aura_data/locality_ledger*.jsonl\n"
+}

@@ -7,8 +7,8 @@
     "date": "2026-11-26",
     "target": "pinned",
     "commit": "2ab893dfc22ea395b76e88092ab895f1f753848a",
-    "runner": "local:apple-m4-pro",
-    "duration_s": 78.7,
+    "runner": "github-actions:ubuntu-24.04",
+    "duration_s": 31.6,
     "exit_code": 0,
     "value": 0.0,
     "guards": [
@@ -20,7 +20,7 @@
     ],
     "passed": true,
     "error": null,
-    "path": "runs/aura-mind-002/2026-11-26-2.json"
+    "path": "runs/aura-mind-002/2026-11-26-3.json"
   },
   "head_last_run": {
     "id": "aura-mind-002",
@@ -28,7 +28,7 @@
     "target": "head",
     "commit": "43d1204e9c5e3cc227e86c74d138d6aab7e97be3",
     "runner": "github-actions:ubuntu-24.04",
-    "duration_s": 31.4,
+    "duration_s": 29.6,
     "exit_code": 0,
     "value": 0.0,
     "guards": [
@@ -40,8 +40,8 @@
     ],
     "passed": true,
     "error": null,
-    "path": "runs/aura-mind-002/2026-11-26-head.json"
+    "path": "runs/aura-mind-002/2026-11-26-head-2.json"
   },
-  "ledger_commit": "6b06b44ff5cb256f12cb4acb931e874335be8547",
-  "updated": "2026-11-26T02:26:15Z"
+  "ledger_commit": "a13f038d426bf4e20a5a42cc809cc00e25b5b08c",
+  "updated": "2026-11-26T12:02:14Z"
 }
