@@ -1,22 +1,22 @@
 {
   "id": "aura-mind-001",
-  "status": "manual",
-  "last_verified": "2026-11-25",
+  "status": "standing",
+  "last_verified": "2026-11-26",
   "last_run": {
     "id": "aura-mind-001",
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "target": "pinned",
     "commit": "2ab893dfc22ea395b76e88092ab895f1f753848a",
     "runner": "local:apple-m4-pro",
-    "duration_s": 109.0,
+    "duration_s": 108.2,
     "exit_code": 0,
     "value": 0.0,
     "guards": [],
     "passed": true,
     "error": null,
-    "path": "runs/aura-mind-001/2026-11-25.json"
+    "path": "runs/aura-mind-001/2026-11-26.json"
   },
   "head_last_run": null,
-  "ledger_commit": "bd96422fb0763b571e5360803326367faf0fb934",
-  "updated": "2026-11-26T00:05:07Z"
+  "ledger_commit": "5f04ea72dd165f0532fc051d098113bb98389b7d",
+  "updated": "2026-11-26T02:35:19Z"
 }

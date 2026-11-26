@@ -1,0 +1,15 @@
+{
+  "id": "kairos-001",
+  "date": "2026-11-26",
+  "target": "pinned",
+  "commit": "de493b03f3e68b2eefec7783cc770c58cf0b69bd",
+  "runner": "local:apple-m4-pro",
+  "command": "python -m pytest tests/bridge/test_causal_bus.py -q --junitxml=result.xml",
+  "duration_s": 103.5,
+  "exit_code": 0,
+  "value": 0.0,
+  "guards": [],
+  "passed": true,
+  "error": null,
+  "stdout_tail": "ne-any.whl (92 kB)\nDownloading rich-15.0.0-py3-none-any.whl (310 kB)\nDownloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)\nDownloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)\nDownloading scikit_learn-1.9.1-cp315-cp315-macosx_12_0_arm64.whl (8.3 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 920.3 kB/s  0:00:09\nDownloading joblib-1.6.0-py3-none-any.whl (306 kB)\nDownloading cloudpickle-3.1.3-py3-none-any.whl (22 kB)\nDownloading narwhals-2.29.0-py3-none-any.whl (501 kB)\nDownloading scipy-1.18.1-cp315-cp315-macosx_14_0_arm64.whl (20.5 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.5/20.5 MB 1.0 MB/s  0:00:19\nDownloading threadpoolctl-3.8.0-py3-none-any.whl (32 kB)\nDownloading websockets-17.4-cp315-cp315-macosx_11_0_arm64.whl (216 kB)\nDownloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)\nBuilding wheels for collected packages: kairos\n  Building editable for kairos (pyproject.toml): started\n  Building editable for kairos (pyproject.toml): finished with status 'done'\n  Created wheel for kairos: filename=kairos-1.0.0-0.editable-py3-none-any.whl size=15558 sha256=9c99a53e9082bb0eab9fef472d5926b5745bf5bb3722e5cdbdbab404cf11da63\n  Stored in directory: $TMPDIR/pip-ephem-wheel-cache-wb73zquw/wheels/4b/e8/ea/4add93c23de07878eeeb88694ac7845fe75a3377d764874407\nSuccessfully built kairos\nInstalling collected packages: websockets, tzdata, threadpoolctl, pygments, pyarrow, pluggy, packaging, numpy, narwhals, mdurl, iniconfig, cloudpickle, scipy, python-dateutil, pytest, markdown-it-py, joblib, scikit-learn, rich, pandas, kairos\n\nSuccessfully installed cloudpickle-3.1.3 iniconfig-2.3.1 joblib-1.6.0 kairos-1.0.0 markdown-it-py-4.3.0 mdurl-0.1.2 narwhals-2.29.0 numpy-2.5.5 packaging-26.4 pandas-3.1.1 pluggy-1.7.0 pyarrow-26.0.1 pygments-2.21.0 pytest-9.2.0 python-dateutil-4.0.0 rich-15.0.0 scikit-learn-1.9.1 scipy-1.18.1 threadpoolctl-3.8.0 tzdata-2026.6 websockets-17.4\n.............                                                            [100%]\n13 passed in 0.42s\n"
+}
