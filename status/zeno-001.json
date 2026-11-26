@@ -1,35 +1,35 @@
 {
   "id": "zeno-001",
   "status": "manual",
-  "last_verified": "2026-11-25",
+  "last_verified": "2026-11-26",
   "last_run": {
     "id": "zeno-001",
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "target": "pinned",
     "commit": "493eed8b2bdc8d31b743bb4deaf5804ba037c45d",
-    "runner": "local:apple-m4-pro",
-    "duration_s": 14.9,
+    "runner": "github-actions:macos-15",
+    "duration_s": 36.5,
     "exit_code": 0,
     "value": 0.94565,
     "guards": [],
     "passed": true,
     "error": null,
-    "path": "runs/zeno-001/2026-11-25-2.json"
+    "path": "runs/zeno-001/2026-11-26.json"
   },
   "head_last_run": {
     "id": "zeno-001",
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "target": "head",
     "commit": "72540d972314b88198fc70b4ef8e36b19a3d8953",
-    "runner": "local:apple-m4-pro",
-    "duration_s": 16.6,
+    "runner": "github-actions:macos-15",
+    "duration_s": 33.1,
     "exit_code": 0,
     "value": 0.94565,
     "guards": [],
     "passed": true,
     "error": null,
-    "path": "runs/zeno-001/2026-11-25-head.json"
+    "path": "runs/zeno-001/2026-11-26-head.json"
   },
-  "ledger_commit": "19271730ea45c2bebb97b82e0b09595a39869fd4",
-  "updated": "2026-11-25T23:55:52Z"
+  "ledger_commit": "257535a38d316f722174022faa07bbfb7f61b0ef",
+  "updated": "2026-11-26T00:10:23Z"
 }

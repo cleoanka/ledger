@@ -1,0 +1,15 @@
+{
+  "id": "unscratchable-001",
+  "date": "2026-11-26",
+  "target": "pinned",
+  "commit": "831f6fa2383a42903e0714947536533acb5b9718",
+  "runner": "github-actions:ubuntu-24.04",
+  "command": "node --test --test-reporter=junit --test-reporter-destination=result.xml",
+  "duration_s": 0.9,
+  "exit_code": 0,
+  "value": 0.0,
+  "guards": [],
+  "passed": true,
+  "error": null,
+  "stdout_tail": ""
+}
