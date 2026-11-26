@@ -40,8 +40,8 @@
       "date": "2026-11-26",
       "status": "manual",
       "reason": {
-        "tr": "İlk kayıt: değer sabitlenmiş commit'teki README'den; defter henüz yeniden çalıştırmadı.",
-        "en": "First entry: value from the README at the pinned commit; not re-run by the ledger yet."
+        "tr": "İlk kayıt: durumu sahibi belirledi; değer, sabitlenmiş commit'te yayımlandığı gibi.",
+        "en": "First entry: status set by the owner; value as published at the pinned commit."
       },
       "by": "cleoanka"
     }
