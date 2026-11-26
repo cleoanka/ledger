@@ -23,7 +23,7 @@
   },
   "repo": "github.com/cleoanka/kairos",
   "commit": "de493b03f3e68b2eefec7783cc770c58cf0b69bd",
-  "setup": "pip install -e .",
+  "setup": "pip install -e . pytest",
   "command": "python scripts/reproduce.py",
   "result_path": "",
   "result_key": "Beats naive-long on RANGE\\s+(\\d+)/\\d+ seeds",

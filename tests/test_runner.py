@@ -207,7 +207,7 @@ class Runner(unittest.TestCase):
 
     def test_runs_on_filter(self):
         c = make_claim("zeno-901", 'echo run >> "$LEDGER_TEST_MARK"; ' + self.VALUE_CMD)
-        c["rerun"]["runs_on"] = "macos-14"
+        c["rerun"]["runs_on"] = "macos-15"
         self.put(c)
         self.run_ledger("--class", "nightly", "--runs-on", "ubuntu-24.04")
         self.assertFalse(self.mark.exists())

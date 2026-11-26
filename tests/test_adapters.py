@@ -57,7 +57,7 @@ class Adapters(unittest.TestCase):
         out = "  ✓  Beats naive-long on RANGE         5/5 seeds\n"
         self.assertEqual(extract("stdout_regex", None, r"Beats naive-long on RANGE\s+(\d+)/\d+ seeds", out), 5.0)
         out2 = "=== digits-perm10 (n=5 seed) ===\n  REGIONAL  A_N=0.865±0.032  BWT=-0.000±0.001  n_reg=10.2±0.4\n"
-        key = json.load(open(Path(__file__).parent.parent / "claims" / "aura-mind-003.json"))["result_key"]
+        key = json.loads((Path(__file__).parent.parent / "claims" / "aura-mind-003.json").read_text(encoding="utf-8"))["result_key"]
         self.assertEqual(extract("stdout_regex", None, key, out2), 0.0)
         with self.assertRaises(ValueError):
             extract("stdout_regex", None, r"nothing (\d+)", out)

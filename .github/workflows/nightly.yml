@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-24.04, macos-14]
+        os: [ubuntu-24.04, macos-15]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 45
     env:
@@ -87,8 +87,8 @@ jobs:
           path: ${{ runner.temp }}/changes
       - name: Commit the records
         run: |
-          shopt -s nullglob
-          for f in "$RUNNER_TEMP"/changes/*/changes.tgz; do tar -xzf "$f"; done
+          # one artifact lands directly in changes/, several land in changes/<name>/
+          find "$RUNNER_TEMP/changes" -name changes.tgz -print -exec tar -xzf {} \;
           python3 -m unittest tests.test_claims
           git add runs status claims
           if git diff --cached --quiet; then echo "nothing to record"; exit 0; fi

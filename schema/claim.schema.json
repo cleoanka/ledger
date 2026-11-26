@@ -45,7 +45,7 @@
       "properties": {
         "class": {"enum": ["nightly", "weekly", "manual"]},
         "budget_min": {"type": "integer", "minimum": 1, "maximum": 10},
-        "runs_on": {"type": "string", "pattern": "^(ubuntu-24\\.04|macos-14|local:[a-z0-9-]+)$"}
+        "runs_on": {"type": "string", "pattern": "^(ubuntu-24\\.04|macos-15|local:[a-z0-9-]+)$"}
       }
     },
     "status": {"$ref": "#/$defs/status"},

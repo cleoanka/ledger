@@ -31,7 +31,7 @@
   "rerun": {
     "class": "nightly",
     "budget_min": 10,
-    "runs_on": "macos-14"
+    "runs_on": "macos-15"
   },
   "status": "manual",
   "history": [
