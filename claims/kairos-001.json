@@ -18,8 +18,8 @@
   "comparator": "eq",
   "tolerance": 0,
   "conditions": {
-    "tr": "yalnız sonlu kesim zamanları; NaN bir kesim zamanı `main` dalında `as_of` korumasını aşıyor, düzeltmesi açık PR #1'de (mezarlık g-kairos-02).",
-    "en": "Finite cutoffs only; a NaN cutoff passes `as_of` on `main`, the fix is open PR #1 (graveyard g-kairos-02)."
+    "tr": "yalnız sonlu kesim zamanları; sabitlenmiş commit'te NaN bir kesim zamanı `as_of` korumasını aşıyor, `main` bu açığı 2026-11-25'te kapattı (9a6feb7) (mezarlık g-kairos-02).",
+    "en": "Finite cutoffs only; at the pinned commit a NaN cutoff passes `as_of`, and `main` closed the hole on 2026-11-25 (9a6feb7) (graveyard g-kairos-02)."
   },
   "repo": "github.com/cleoanka/kairos",
   "commit": "de493b03f3e68b2eefec7783cc770c58cf0b69bd",
