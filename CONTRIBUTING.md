@@ -2,7 +2,7 @@
 
 > **Türkçe aşağıda.**
 
-Every claim in this ledger can be refuted. Doing so is welcome, and it pays a small bounty.
+Every claim in this ledger can be refuted. Doing so is welcome: an accepted refutation changes the claim's status and puts your name on the list below.
 
 ## What counts
 
@@ -13,16 +13,16 @@ Every claim in this ledger can be refuted. Doing so is welcome, and it pays a sm
 - a **method error** that voids the claim, for example future data leaking into a backtest or test data
   mixed into training.
 
-**Not a refutation** (no bounty):
+**Not a refutation**:
 
 - a different result under different conditions (this may lead to the claim being marked `weakened`,
-  but it earns no bounty),
+  but it does not count as a refutation),
 - typos and wording,
 - performance differences on hardware the claim does not name,
 - statements about projects that are not in this ledger.
 
 Security issues on www.cleoanka.com are outside this program. Report them privately as
-[security.txt](https://www.cleoanka.com/.well-known/security.txt) says; there is no bounty for them in v1.
+[security.txt](https://www.cleoanka.com/.well-known/security.txt) says.
 
 ## How
 
@@ -35,14 +35,6 @@ Security issues on www.cleoanka.com are outside this program. Report them privat
 An accepted refutation changes the claim's status to `refuted` (or `weakened`) in a commit that links the
 issue, and the refutation is listed in the claim's `refutations` field.
 
-## Bounty
-
-- **50 USD** for each accepted refutation.
-- At most **150 USD per month** and **600 USD per year**. When a month's cap is reached, the queue moves
-  to the next month.
-- Paid as a one-time sponsorship to the refuter's GitHub Sponsors profile, or as a donation to an
-  open-source project the refuter chooses.
-
 ## Refuters
 
 No one has refuted a claim yet. Be the first.
@@ -51,7 +43,7 @@ No one has refuted a claim yet. Be the first.
 
 # Bir iddiayı çürütmek
 
-Bu defterdeki her iddia çürütülebilir. Çürütmeye çalışmanız memnuniyetle karşılanır ve küçük bir ödülü vardır.
+Bu defterdeki her iddia çürütülebilir. Çürütmeye çalışmanız memnuniyetle karşılanır: kabul edilen bir çürütme iddianın durumunu değiştirir ve adınızı aşağıdaki listeye ekler.
 
 ## Ne sayılır
 
@@ -62,17 +54,17 @@ Bu defterdeki her iddia çürütülebilir. Çürütmeye çalışmanız memnuniye
 - iddiayı geçersiz kılan bir **yöntem hatası**, örneğin bir geriye dönük testte gelecek verisinin sızması
   ya da test verisinin eğitime karışması.
 
-**Çürütme sayılmaz** (ödül yok):
+**Çürütme sayılmaz**:
 
 - farklı koşullarda farklı bir sonuç (iddianın `weakened`, yani "zayıfladı" olarak işaretlenmesine yol
-  açabilir ama ödül almaz),
+  açabilir ama çürütme sayılmaz),
 - yazım hataları ve üslup,
 - iddianın belirtmediği donanımda performans farkları,
 - bu defterde olmayan projeler hakkındaki ifadeler.
 
 www.cleoanka.com'daki güvenlik açıkları bu programın dışındadır. Onları
 [security.txt](https://www.cleoanka.com/.well-known/security.txt) dosyasında yazdığı gibi gizli olarak
-bildirin; v1'de bunlar için ödül yoktur.
+bildirin.
 
 ## Nasıl
 
@@ -84,13 +76,6 @@ bildirin; v1'de bunlar için ödül yoktur.
 
 Kabul edilen bir çürütme, iddianın durumunu issue'ya bağlantı veren bir commit ile `refuted` ("çürütüldü")
 ya da `weakened` ("zayıfladı") yapar ve çürütme iddianın `refutations` alanına eklenir.
-
-## Ödül
-
-- Kabul edilen her çürütme için **50 USD**.
-- Ayda en fazla **150 USD**, yılda en fazla **600 USD**. Bir ayın tavanı dolunca sıra sonraki aya kayar.
-- Ödeme, çürütenin GitHub Sponsors profiline tek seferlik sponsorluk olarak ya da çürütenin seçtiği bir
-  açık kaynak projeye bağış olarak yapılır.
 
 ## Çürütenler
 

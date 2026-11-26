@@ -54,11 +54,6 @@ body:
       label: Why this refutes the claim / Bu neden iddiayı çürütüyor
     validations:
       required: true
-  - type: input
-    id: payout
-    attributes:
-      label: Bounty preference (optional) / Ödül tercihi (isteğe bağlı)
-      description: Your GitHub Sponsors profile, or an open-source project to donate to. / GitHub Sponsors profiliniz ya da bağış yapılacak açık kaynak proje.
   - type: checkboxes
     id: confirm
     attributes:

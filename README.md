@@ -96,7 +96,7 @@ large downloads) are run this way by the owner.
 
 ## Refuting a claim
 
-Open an issue with the **Refutation** form. Rules, response times and the bounty are in
+Open an issue with the **Refutation** form. Rules and response times are in
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License

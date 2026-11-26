@@ -5,4 +5,4 @@ contact_links:
     about: Site vulnerabilities are outside the refutation program. Report them privately as security.txt says.
   - name: Refutation rules / Çürütme kuralları
     url: https://github.com/cleoanka/ledger/blob/main/CONTRIBUTING.md
-    about: What counts as a refutation, response times and the bounty.
+    about: What counts as a refutation and response times.
