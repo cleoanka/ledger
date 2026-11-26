@@ -3,8 +3,8 @@
   "project": "kairos",
   "lab_page": "/lab/kairos/",
   "sentence": {
-    "tr": "İyi huylu (RANGE) sentetik piyasada piyasa yapıcı strateji, hep uzun duran saf stratejiyi 5 tohumun 5'inde geçiyor (spread kazancı ≈ +850'ye karşı ≈ +80).",
-    "en": "In a benign (RANGE) synthetic market the market maker beats naive always-long on 5 of 5 seeds (spread capture ≈ +850 vs ≈ +80)."
+    "tr": "İyi huylu (RANGE) sentetik piyasada piyasa yapıcı strateji, hep uzun pozisyonda kalan saf karşılaştırma stratejisini 5 tohumun 5'inde geçiyor (spread kazancı ≈ +850'ye karşı ≈ +80).",
+    "en": "In a benign (RANGE) synthetic market, the market maker beats a naive always-long baseline on 5 of 5 seeds (spread capture ≈ +850 vs ≈ +80)."
   },
   "value": 5,
   "display": {

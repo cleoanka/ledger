@@ -18,8 +18,8 @@
   "comparator": "approx",
   "tolerance": 0.005,
   "conditions": {
-    "tr": "10.000 görüntülük değerlendirme kümesi, 60 rastgele etiket çekilişinin ortalaması, k=10, α=0,99, repoyla gelen `contrastive_emb.npz`; GPU gerekmez.",
-    "en": "10,000-image evaluation set, mean of 60 random label draws, k=10, α=0.99, the `contrastive_emb.npz` shipped in the repo; no GPU needed."
+    "tr": "10.000 görüntülük değerlendirme kümesi (dizinleri repodaki `eval_split.npz` dosyasında), 60 rastgele etiket çekilişinin ortalaması, k=10, α=0,99, ham 784 piksellik MNIST görüntüleri arasında L2 uzaklığı (betik MNIST'i ilk çalıştırmada OpenML'den indirir); GPU gerekmez.",
+    "en": "10,000-image evaluation set (indices in the repo's `eval_split.npz`), mean of 60 random label draws, k=10, α=0.99, L2 distance between raw 784-pixel MNIST images (the script downloads MNIST from OpenML on first run); no GPU needed."
   },
   "repo": "github.com/cleoanka/atlas",
   "commit": "b1340825d641d783e8e658732c11d1baed8cf333",
@@ -59,6 +59,7 @@
   "sources": [
     "atlas@b134082:README.md#three-claims-each-measured",
     "atlas@b134082:README.md#results-on-mnist",
-    "atlas@b134082:results/results.json"
+    "atlas@b134082:results/results.json",
+    "atlas@b134082:src/representations.py"
   ]
 }

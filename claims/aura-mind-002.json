@@ -3,8 +3,8 @@
   "project": "aura-mind",
   "lab_page": "/lab/aura-mind/",
   "sentence": {
-    "tr": "Yerellik sertifikası 420 adımlık bir sürekli öğrenme akışının 420 adımını da temiz onaylıyor: etkin olmayan bölgelere sıfır sızıntı. Yasak tek global döngüyle kurulan pozitif kontrol aynı akışta 280/420 adımda yakalanıyor.",
-    "en": "The locality certificate clears all 420 steps of a 420-step continual-learning stream: zero leaks into inactive regions. A positive control built on the forbidden single global loop is caught on 280 of the same 420 steps."
+    "tr": "Yerellik sertifikası 420 adımlık bir sürekli öğrenme akışının her adımını temiz onaylıyor: etkin olmayan bölgelere sıfır sızıntı. Yasak tek global döngüyle kurulan pozitif kontrol aynı akışta 280/420 adımda yakalanıyor.",
+    "en": "The locality certificate clears every step of a 420-step continual-learning stream: zero leaks into inactive regions. A positive control built on the forbidden single global loop is caught on 280 of the same 420 steps."
   },
   "value": 0,
   "display": {
