@@ -1,22 +1,22 @@
 {
   "id": "kairos-002",
   "status": "manual",
-  "last_verified": null,
+  "last_verified": "2026-11-26",
   "last_run": {
     "id": "kairos-002",
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "target": "pinned",
     "commit": "de493b03f3e68b2eefec7783cc770c58cf0b69bd",
     "runner": "local:apple-m4-pro",
-    "duration_s": 157.1,
-    "exit_code": 1,
+    "duration_s": 156.1,
+    "exit_code": 0,
     "value": 5.0,
     "guards": [],
-    "passed": false,
-    "error": "command exited with code 1",
-    "path": "runs/kairos-002/2026-11-25.json"
+    "passed": true,
+    "error": null,
+    "path": "runs/kairos-002/2026-11-26.json"
   },
   "head_last_run": null,
-  "ledger_commit": "bd96422fb0763b571e5360803326367faf0fb934",
-  "updated": "2026-11-26T00:05:07Z"
+  "ledger_commit": "a47a91ed44fd7e29b27ed2c8d0146a7b9e01b82e",
+  "updated": "2026-11-26T00:08:43Z"
 }
