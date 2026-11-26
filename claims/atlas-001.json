@@ -33,7 +33,7 @@
     "budget_min": 10,
     "runs_on": "ubuntu-24.04"
   },
-  "status": "manual",
+  "status": "standing",
   "history": [
     {
       "date": "2026-11-26",
@@ -41,6 +41,15 @@
       "reason": {
         "tr": "İlk kayıt: durumu sahibi belirledi; değer, sabitlenmiş commit'te yayımlandığı gibi.",
         "en": "First entry: status set by the owner; value as published at the pinned commit."
+      },
+      "by": "cleoanka"
+    },
+    {
+      "date": "2026-11-26",
+      "status": "standing",
+      "reason": {
+        "tr": "İlk atama: sabitlenmiş commit'teki yeniden çalıştırma kuralın içinde (runs/atlas-001/2026-11-26-2.json).",
+        "en": "First assignment: the re-run at the pinned commit is within the rule (runs/atlas-001/2026-11-26-2.json)."
       },
       "by": "cleoanka"
     }

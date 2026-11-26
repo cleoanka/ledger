@@ -1,0 +1,15 @@
+{
+  "id": "atlas-001",
+  "date": "2026-11-26",
+  "target": "pinned",
+  "commit": "b1340825d641d783e8e658732c11d1baed8cf333",
+  "runner": "local:apple-m4-pro",
+  "command": "python src/evaluate.py",
+  "duration_s": 185.1,
+  "exit_code": 0,
+  "value": 0.9468616666666667,
+  "guards": [],
+  "passed": true,
+  "error": null,
+  "stdout_tail": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 1.0 MB/s  0:00:09\nDownloading pillow-13.0.0-cp315-cp315-macosx_11_0_arm64.whl (4.9 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 606.5 kB/s  0:00:09\nDownloading contourpy-1.4.0-cp315-cp315-macosx_11_0_arm64.whl (283 kB)\nDownloading cycler-0.12.1-py3-none-any.whl (8.3 kB)\nDownloading fonttools-4.69.1-cp315-cp315-macosx_10_15_universal2.whl (3.8 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 829.9 kB/s  0:00:04\nDownloading joblib-1.6.0-py3-none-any.whl (306 kB)\nDownloading cloudpickle-3.1.3-py3-none-any.whl (22 kB)\nDownloading kiwisolver-1.5.1-cp315-cp315-macosx_11_0_arm64.whl (64 kB)\nDownloading narwhals-2.29.0-py3-none-any.whl (501 kB)\nDownloading packaging-26.4-py3-none-any.whl (140 kB)\nDownloading pyparsing-3.3.3-py3-none-any.whl (126 kB)\nDownloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)\nDownloading threadpoolctl-3.8.0-py3-none-any.whl (32 kB)\nDownloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)\nInstalling collected packages: tzdata, threadpoolctl, pyparsing, pillow, packaging, numpy, narwhals, kiwisolver, fonttools, cycler, cloudpickle, scipy, python-dateutil, joblib, contourpy, scikit-learn, matplotlib\n\nSuccessfully installed cloudpickle-3.1.3 contourpy-1.4.0 cycler-0.12.1 fonttools-4.69.1 joblib-1.6.0 kiwisolver-1.5.1 matplotlib-3.11.2 narwhals-2.29.0 numpy-2.5.5 packaging-26.4 pillow-13.0.0 pyparsing-3.3.3 python-dateutil-4.0.0 scikit-learn-1.9.1 scipy-1.18.1 threadpoolctl-3.8.0 tzdata-2026.6\n=== atlas: headline table · mnist (60 trials) ===\ndownloading MNIST (once)...\n  raw pixels           purity= 88.4%  euclid= 42.3%  diffusion= 71.4% (±5.8)  [39s]\n  PCA-50               purity= 89.9%  euclid= 43.6%  diffusion= 74.6% (±5.8)  [2s]\n  diffusion map        purity= 91.3%  euclid= 37.6%  diffusion= 72.8% (±6.2)  [2s]\n  contrastive          purity= 96.6%  euclid= 62.9%  diffusion= 94.7% (±3.6)  [2s]\n\nfull-label linear upper bound: 98.6%  (~7000 labels)\nwrote results/results.json\n"
+}

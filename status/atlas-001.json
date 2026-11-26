@@ -1,20 +1,20 @@
 {
   "id": "atlas-001",
-  "status": "manual",
+  "status": "standing",
   "last_verified": "2026-11-26",
   "last_run": {
     "id": "atlas-001",
     "date": "2026-11-26",
     "target": "pinned",
     "commit": "b1340825d641d783e8e658732c11d1baed8cf333",
-    "runner": "github-actions:ubuntu-24.04",
-    "duration_s": 68.7,
+    "runner": "local:apple-m4-pro",
+    "duration_s": 185.1,
     "exit_code": 0,
     "value": 0.9468616666666667,
     "guards": [],
     "passed": true,
     "error": null,
-    "path": "runs/atlas-001/2026-11-26.json"
+    "path": "runs/atlas-001/2026-11-26-2.json"
   },
   "head_last_run": {
     "id": "atlas-001",
@@ -30,6 +30,6 @@
     "error": null,
     "path": "runs/atlas-001/2026-11-26-head.json"
   },
-  "ledger_commit": "257535a38d316f722174022faa07bbfb7f61b0ef",
-  "updated": "2026-11-26T00:12:48Z"
+  "ledger_commit": "6b06b44ff5cb256f12cb4acb931e874335be8547",
+  "updated": "2026-11-26T02:26:15Z"
 }
