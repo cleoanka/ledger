@@ -1,0 +1,15 @@
+{
+  "id": "aura-mind-001",
+  "date": "2026-11-25",
+  "target": "pinned",
+  "commit": "2ab893dfc22ea395b76e88092ab895f1f753848a",
+  "runner": "local:apple-m4-pro",
+  "command": "python scripts/reproduce_results.py",
+  "duration_s": 109.0,
+  "exit_code": 0,
+  "value": 0.0,
+  "guards": [],
+  "passed": true,
+  "error": null,
+  "stdout_tail": "`bench.py` soul-dışı → backprop/Fisher/replay BURADA meşru (LogReg gibi). Ablasyon (max_regions=1) = naive-SGD eşdeğeri (strawman); EWC/replay onu çok geçer.\n\nBölgesel R[i,j] (görev i sonrası görev j doğruluğu):\n```\n  0.827  0.087  0.053\n  0.827  0.867  0.020\n  0.827  0.867  0.840\n```\nAblasyon R[i,j] (köşegen-dışı çöküş = unutma):\n```\n  0.827  0.087  0.053\n  0.313  0.820  0.053\n  0.193  0.140  0.800\n```\n\n## Split-digits (sınıf-artımlı; 5 görev × 2 sınıf)\n\n| metrik | **bölgesel (CAS)** | ablasyon (naive-SGD) | EWC (lineer+Fisher) | Replay (lineer+tampon) | LogReg tavanı |\n|---|---|---|---|---|---|\n| A_N (son ort. doğruluk) | **0.444** | 0.270 | 0.196 | 0.701 | 0.970 |\n| BWT (geriye-transfer; 0=unutma yok) | **-0.608** | -0.875 | -0.991 | -0.348 | — |\n| bölge sayısı | 2 | 1 | — | — | — |\n| bölge-seçiciliği (mean IoU; düşük=ayrık) | 1.000 | — | — | — | — |\n| σ̂ sürülen-süreç ardışık-oran (≈kritik; İÇSEL-kritiklik DEĞİL — recurrence yok) | 0.96 | — | — | — | — |\n| çığ eğimi α̂ (KABA; klemp-artefaktı olabilir) | 1.46 | — | — | — | — |\n\n> **EWC/Replay = GERÇEK CL baseline'ları (red-team #12)**: tek-katman lineer okuyucu üzerinde EWC (Fisher-diagonal ceza, λ=50) ve sınıf-dengeli replay (20 örnek/sınıf). `bench.py` soul-dışı → backprop/Fisher/replay BURADA meşru (LogReg gibi). Ablasyon (max_regions=1) = naive-SGD eşdeğeri (strawman); EWC/replay onu çok geçer.\n\nBölgesel R[i,j] (görev i sonrası görev j doğruluğu):\n```\n  1.000  0.000  0.000  0.000  0.000\n  0.495  0.926  0.000  0.000  0.000\n  0.248  0.056  0.982  0.000  0.000\n  0.110  0.296  0.248  1.000  0.000\n  0.101  0.435  0.440  0.500  0.745\n```\nAblasyon R[i,j] (köşegen-dışı çöküş = unutma):\n```\n  1.000  0.000  0.000  0.000  0.000\n  0.495  0.926  0.000  0.000  0.000\n  0.248  0.056  0.982  0.000  0.000\n  0.073  0.269  0.110  1.000  0.000\n  0.009  0.000  0.073  0.324  0.943\n```\n\n======================================================================\nRESULTS.md yazıldı ($WORK/aura-mind-2ab893d-pinned-6aff583f/src/RESULTS.md).\n"
+}

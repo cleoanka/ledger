@@ -1,0 +1,15 @@
+{
+  "id": "kairos-002",
+  "date": "2026-11-25",
+  "target": "pinned",
+  "commit": "de493b03f3e68b2eefec7783cc770c58cf0b69bd",
+  "runner": "local:apple-m4-pro",
+  "command": "python scripts/reproduce.py",
+  "duration_s": 157.1,
+  "exit_code": 1,
+  "value": 5.0,
+  "guards": [],
+  "passed": false,
+  "error": "command exited with code 1",
+  "stdout_tail": "14cd1528270a63c37e54660312c86efe\n  Stored in directory: $TMPDIR/pip-ephem-wheel-cache-gk4u1rp2/wheels/83/d0/1f/c97f8c2ed682e6ae0ec3d86bbe756576e607e76b1461109ff5\nSuccessfully built kairos\nInstalling collected packages: websockets, tzdata, threadpoolctl, pygments, pyarrow, numpy, narwhals, mdurl, cloudpickle, scipy, python-dateutil, markdown-it-py, joblib, scikit-learn, rich, pandas, kairos\n\nSuccessfully installed cloudpickle-3.1.3 joblib-1.6.0 kairos-1.0.0 markdown-it-py-4.3.0 mdurl-0.1.2 narwhals-2.29.0 numpy-2.5.5 pandas-3.1.1 pyarrow-26.0.1 pygments-2.21.0 python-dateutil-4.0.0 rich-15.0.0 scikit-learn-1.9.1 scipy-1.18.1 threadpoolctl-3.8.0 tzdata-2026.6 websockets-17.4\n[1/8] Constitution (soul_check)…\n[2/8] Core test suite (bridge + loop + perception)…\n[3/8] Causality — as_of never leaks the future…\n[4/8] Cognitive loop is deterministic…\n[5/8] System-1 veto — forced-TOXIC market stands aside…\n[6/8] Regime-adaptive edge on the benign (range) market…\n[7/8] Adaptivity — stance tracks the regime (not always long)…\n[8/8] System-1 self-supervised regime separation (MLX)…\n\n==================================================================\n KAIROS — reproducibility verdict\n==================================================================\n  \u001b[32m✓ PASS\u001b[0m  Constitution green                \n  \u001b[31m✗ FAIL\u001b[0m  Core tests green                  $WORK/kairos-de493b0-pinned-3b725fc1/venv/bin/python: No module named pytest\n  \u001b[32m✓ PASS\u001b[0m  No look-ahead leak                probed 3 cutoffs over 375 percepts\n  \u001b[32m✓ PASS\u001b[0m  Loop deterministic                pnl=-8323.877\n  \u001b[32m✓ PASS\u001b[0m  System-1 veto works               fills=0\n  \u001b[32m✓ PASS\u001b[0m  Beats naive-long on RANGE         5/5 seeds\n  \u001b[32m✓ PASS\u001b[0m  Stance is regime-adaptive         observed stances: ['BUY', 'HOLD', 'SELL']\n  \u001b[33m− SKIP\u001b[0m  Regime ARI >= 0.9 (MLX)           SKIPPED — MLX not installed\n==================================================================\n\u001b[31m✗ 1 headline claim(s) failed.\u001b[0m\n"
+}
