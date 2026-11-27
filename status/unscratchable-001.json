@@ -1,35 +1,35 @@
 {
   "id": "unscratchable-001",
   "status": "standing",
-  "last_verified": "2026-11-26",
+  "last_verified": "2026-11-27",
   "last_run": {
     "id": "unscratchable-001",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "target": "pinned",
     "commit": "831f6fa2383a42903e0714947536533acb5b9718",
     "runner": "github-actions:ubuntu-24.04",
-    "duration_s": 1.0,
+    "duration_s": 0.8,
     "exit_code": 0,
     "value": 0.0,
     "guards": [],
     "passed": true,
     "error": null,
-    "path": "runs/unscratchable-001/2026-11-26-3.json"
+    "path": "runs/unscratchable-001/2026-11-27.json"
   },
   "head_last_run": {
     "id": "unscratchable-001",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "target": "head",
     "commit": "365a25fb51ab2d097663a6e66e6199317a614105",
     "runner": "github-actions:ubuntu-24.04",
-    "duration_s": 1.0,
+    "duration_s": 0.8,
     "exit_code": 0,
     "value": 0.0,
     "guards": [],
     "passed": true,
     "error": null,
-    "path": "runs/unscratchable-001/2026-11-26-head-2.json"
+    "path": "runs/unscratchable-001/2026-11-27-head.json"
   },
-  "ledger_commit": "a13f038d426bf4e20a5a42cc809cc00e25b5b08c",
-  "updated": "2026-11-26T12:02:14Z"
+  "ledger_commit": "ebf785bc30cf6bef2b5133de925e3a50ef7781ed",
+  "updated": "2026-11-27T11:53:30Z"
 }

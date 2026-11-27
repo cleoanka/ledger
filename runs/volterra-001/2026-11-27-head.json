@@ -1,0 +1,21 @@
+{
+  "id": "volterra-001",
+  "date": "2026-11-27",
+  "target": "head",
+  "commit": "de827f3b59fd705f5507f8a3fde8d960316693ff",
+  "runner": "github-actions:ubuntu-24.04",
+  "command": "python -I $LEDGER/adapters/volterra_quadrature.py --repo . --out result.json",
+  "duration_s": 4.4,
+  "exit_code": 0,
+  "value": 1.7763568394002505e-15,
+  "guards": [
+    {
+      "key": "trapezoid_max_err",
+      "value": 0.003266658575334258,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "error": null,
+  "stdout_tail": "Collecting numpy\n  Downloading numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)\nDownloading numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (15.7 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 113.6 MB/s eta 0:00:00\nInstalling collected packages: numpy\nSuccessfully installed numpy-2.5.5\n{\"chebyshev_max_err\": 1.7763568394002505e-15, \"trapezoid_max_err\": 0.003266658575334258, \"M\": 40}\n"
+}
