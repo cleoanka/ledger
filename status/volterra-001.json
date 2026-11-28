@@ -1,12 +1,32 @@
 {
   "id": "volterra-001",
   "status": "standing",
-  "last_verified": "2026-11-27",
+  "last_verified": "2026-11-28",
   "last_run": {
     "id": "volterra-001",
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "target": "pinned",
     "commit": "26180ffcc1a45a673840182cca652d5fc0ee8e66",
+    "runner": "github-actions:ubuntu-24.04",
+    "duration_s": 4.6,
+    "exit_code": 0,
+    "value": 1.7763568394002505e-15,
+    "guards": [
+      {
+        "key": "trapezoid_max_err",
+        "value": 0.003266658575334258,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "error": null,
+    "path": "runs/volterra-001/2026-11-28.json"
+  },
+  "head_last_run": {
+    "id": "volterra-001",
+    "date": "2026-11-28",
+    "target": "head",
+    "commit": "de827f3b59fd705f5507f8a3fde8d960316693ff",
     "runner": "github-actions:ubuntu-24.04",
     "duration_s": 4.5,
     "exit_code": 0,
@@ -20,28 +40,8 @@
     ],
     "passed": true,
     "error": null,
-    "path": "runs/volterra-001/2026-11-27.json"
+    "path": "runs/volterra-001/2026-11-28-head.json"
   },
-  "head_last_run": {
-    "id": "volterra-001",
-    "date": "2026-11-27",
-    "target": "head",
-    "commit": "de827f3b59fd705f5507f8a3fde8d960316693ff",
-    "runner": "github-actions:ubuntu-24.04",
-    "duration_s": 4.4,
-    "exit_code": 0,
-    "value": 1.7763568394002505e-15,
-    "guards": [
-      {
-        "key": "trapezoid_max_err",
-        "value": 0.003266658575334258,
-        "passed": true
-      }
-    ],
-    "passed": true,
-    "error": null,
-    "path": "runs/volterra-001/2026-11-27-head.json"
-  },
-  "ledger_commit": "ebf785bc30cf6bef2b5133de925e3a50ef7781ed",
-  "updated": "2026-11-27T11:53:30Z"
+  "ledger_commit": "b8dec35cbd3375e7fe4f26eb5604b0baa36d9f89",
+  "updated": "2026-11-28T11:28:24Z"
 }
